@@ -43,3 +43,32 @@ img:hover{
 
    
 }
+
+
+.score-board{
+    display: flex;
+    max-width: max-content;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 2rem;
+   background-color: coral;
+}
+
+.user{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 5px solid black;
+    margin: 2rem
+    
+    
+}
+
+.Computer{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 5px solid black;
+    margin: 2rem
+    
+}
