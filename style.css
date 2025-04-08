@@ -1,5 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 h1{
     text-align: center;
     background-color: rgb(158, 158, 227);
     text-decoration-color: azure;
+    padding: 2rem;
+}
+
+.image{
+    width: 400px;
+    height: 400px;
+    align-items: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+
+
+}
+
+img:hover{
+    opacity: 50%;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    
+}
+
+
+
+
+.images{
+   display: flex;
+   padding: 50px;
+   max-width: max-content;
+   margin-left: auto;
+   margin-right: auto;
+
+   
 }
