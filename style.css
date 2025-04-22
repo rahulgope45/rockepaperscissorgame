@@ -26,6 +26,7 @@ img{
 
 img:hover{
     opacity: 50%;
+    cursor: pointer;
     transform: scale(0.8);
     transition: all 0.3s ease;
     
@@ -51,7 +52,9 @@ img:hover{
    margin-left: auto;
    margin-right: auto;
    padding: 2rem;
-   background-color: coral;
+   padding-bottom: 2rem;
+   background-color: rgb(190, 197, 236);
+   border-radius: 1rem;
 }
 
 .user{
@@ -71,4 +74,18 @@ img:hover{
     border: 5px solid black;
     margin: 2rem
     
+}
+
+.msgContainer{
+    display: inline-block;
+    display: flex;
+    text-align: center;
+   padding: 3rem;
+   max-width: max-content;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+    background-color: cadetblue;
+
 }
