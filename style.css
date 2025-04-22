@@ -7,7 +7,7 @@ h1{
     text-align: center;
     background-color: rgb(158, 158, 227);
     text-decoration-color: azure;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .image{
@@ -37,7 +37,7 @@ img:hover{
 
 .images{
    display: flex;
-   padding: 50px;
+   padding: 30px;
    max-width: max-content;
    margin-left: auto;
    margin-right: auto;
@@ -51,8 +51,8 @@ img:hover{
     max-width: max-content;
    margin-left: auto;
    margin-right: auto;
-   padding: 2rem;
-   padding-bottom: 2rem;
+   padding: 1rem;
+   padding-bottom: 2px;
    background-color: rgb(190, 197, 236);
    border-radius: 1rem;
 }

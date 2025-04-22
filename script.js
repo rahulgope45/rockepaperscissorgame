@@ -2,6 +2,9 @@ let Compterscore = 0
 let Userscore = 0
 
 const choices = document.querySelectorAll(".image")
+//conecting msg box here
+
+const msg =document.querySelector("#msg")
 
 
 //This one is for User choices
@@ -58,6 +61,7 @@ const playgame = (Userchoise) =>{
 //For Draw game
 const drawGame = ()=>{
     console.log("The Game was Draw")
+    msg.innerText = "Draw"
 }
 
 //showing winner
@@ -65,9 +69,12 @@ const drawGame = ()=>{
 const shoWinner = (userWin) =>{
     if(userWin){
         console.log("You Won")
+        msg.innerText = "You Won!"
     }
     else{
-        console.log("You lost")
+        console.log("You Lost")
+        msg.innerText = "Lost"
+        
     }
 }
 
