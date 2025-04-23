@@ -2,9 +2,22 @@ let Compterscore = 0
 let Userscore = 0
 
 const choices = document.querySelectorAll(".image")
-//conecting msg box here
 
+
+//conecting msg box here
 const msg =document.querySelector("#msg")
+
+//accesing user box here
+const scoreOfuser = document.querySelectorAll("#scoreOfuser")
+
+//accesing computer box here
+const scoreOfcomputer =document.querySelector("#scoreOfcomputer")
+
+//accesing msgcontainer here
+const msgcontainer =document.querySelector("#msgcontainer")
+
+
+
 
 
 //This one is for User choices
@@ -51,7 +64,11 @@ const playgame = (Userchoise) =>{
             //paper ya scissor
             userWin = compChoice === "paper"
         }
+        //msg box calling
         shoWinner(userWin)
+        //userscorebox and computerscorebox calling
+        userScorebox(userWin)
+       
 
     }
 
@@ -62,6 +79,7 @@ const playgame = (Userchoise) =>{
 const drawGame = ()=>{
     console.log("The Game was Draw")
     msg.innerText = "Draw"
+    changeColor3()
 }
 
 //showing winner
@@ -70,12 +88,51 @@ const shoWinner = (userWin) =>{
     if(userWin){
         console.log("You Won")
         msg.innerText = "You Won!"
+        changeColor2()
     }
     else{
         console.log("You Lost")
         msg.innerText = "Lost"
+        changeColor()
         
     }
 }
+
+//user Score-Box
+
+const userScorebox = (userWin) =>{
+    if(userWin){
+        Userscore += 1
+        console.log("Adding one point to user")
+        document.getElementById("scoreOfuser").innerText= Userscore
+    }
+    //Computer Score-Box
+    else{
+        Compterscore += 1
+        console.log("Adding one point to Computer")
+        document.getElementById("scoreOfcomputer").innerText =Compterscore
+    }
+
+}
+
+//changing color function
+function changeColor(){
+    let box = document.getElementById("msgcontainer")
+    box.style.backgroundColor ="Red"
+}
+
+function changeColor2(){
+    let box3 = document.getElementById("msgcontainer")
+    box3.style.backgroundColor ="pink"
+}
+
+function changeColor3(){
+    let box2 = document.getElementById("msgcontainer")
+    box2.style.backgroundColor ="white"
+}
+
+
+
+
 
 
