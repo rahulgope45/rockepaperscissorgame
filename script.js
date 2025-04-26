@@ -128,7 +128,7 @@ function changeColor2(){
 
 function changeColor3(){
     let box2 = document.getElementById("msgcontainer")
-    box2.style.backgroundColor ="white"
+    box2.style.backgroundColor ="black"
 }
 
 
